@@ -6,7 +6,6 @@ logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: /talks
 google_analytics: 'G-EY9RYD056V'
-disqus: ''
 mailchimp-list: 'https://about.us4.list-manage.com/subscribe/post?u=968adfbf049f7a350d19507dd&amp;id=17db7a9dc3&amp;f_id=00ae09e9f0'
 include: ["_pages"]
 permalink: /:title/
