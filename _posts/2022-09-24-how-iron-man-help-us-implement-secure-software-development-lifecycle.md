@@ -12,8 +12,6 @@ rating: 5
 ---
 This talk was my first international talk, at the first ever BSides Kraków so it was super special.
 
-![BSides]({{ site.baseurl }}/assets/images/bsides.jpg)
-
 ## Reference links
 
 [Here]({{ site.baseurl }}/assets/images/bsides.jpg) you can find the slides of the presentation.
