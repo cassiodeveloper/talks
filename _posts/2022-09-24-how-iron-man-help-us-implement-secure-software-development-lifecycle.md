@@ -12,6 +12,10 @@ rating: 5
 ---
 This talk was my first international talk, at the first ever BSides Kraków so it was super special.
 
+## Language
+
+- [X] EN
+
 ## Topics of this presentation
 
 - Threat Modeling 

@@ -12,6 +12,10 @@ rating: 5
 ---
 This talk was my first talk at an official OWASP Group, and the first OWASP Poland Chapter post covid times
 
+## Language
+
+- [X] EN
+
 ## Topics of this presentation
 
 - Threat Modeling 
