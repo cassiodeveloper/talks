@@ -1,8 +1,13 @@
 ---
+categories: [ Jekyll, tutorial ]
+tags: [red, yellow]
+description: "My review of Inception movie. Acting, plot and something else in this short description."
+featured: true
+hidden: true
+rating: 4.5
 layout: post
 title:  "Powerful things you can do with the Markdown editor"
-author: sal
-categories: [ Jekyll, tutorial ]
+author: Cassio
 image: assets/images/16.jpg
 ---
 There are lots of powerful things you can do with the Markdown editor. If you've gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!
