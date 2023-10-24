@@ -23,6 +23,4 @@ This talk was my first talk at an official OWASP Group, and the first OWASP Pola
 
 ## More
 
-<p>
-   [Here](https://www.meetup.com/owasp-poland/events/286302610/) you can find more details about the OWASP Poland Chapter meetup.
-</p>
+[Here](https://www.meetup.com/owasp-poland/events/286302610/) you can find more details about the OWASP Poland Chapter meetup.
