@@ -3,7 +3,7 @@ layout: post
 title:  "The real shift-left"
 description: "This talk was my first talk at an official OWASP Group, and the first OWASP Poland Chapter post covid times"
 author: Cassio
-image: assets/images/bsides.jpg
+image: assets/images/OWASP_Poland_logo.png
 categories: [ owasp, meetup, appsec ]
 tags: [appsec, owasp, meetup]
 featured: true
