@@ -12,9 +12,17 @@ rating: 5
 ---
 This talk was my first international talk, at the first ever BSides Kraków so it was super special.
 
+## Topics of this presentation
+
+- Threat Modeling 
+- DevSecOps ​
+- Vulnerability Management​
+- Application Monitoring​
+- AppSec Program
+
 ## Reference links
 
-[Here]({{ site.baseurl }}/assets/images/bsides.jpg) you can find the slides of the presentation.
+[Here](https://1drv.ms/p/s!AilhcMnbFji6gZ1KjiKF0E34oJq6xA?e=jl3VU9) you can find the slides of the presentation.
 
 ## More
 
