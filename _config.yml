@@ -1,7 +1,7 @@
 # Site
 name: "Cássio Pereira | Talks"
 title: "Cássio Pereira | Talks"
-description: "Cássio Pereira | Talks"
+description: "Explore an Inspiring Journey of Talks by Cássio Pereira - From Thoughtful Keynotes to Engaging Conversations. Dive into a treasure trove of insightful speeches and presentations that have captivated audiences worldwide. Witness the evolution of Cássio's ideas and expertise over the years. Discover the transformative power of their words on this curated platform."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: /talks
@@ -20,7 +20,7 @@ authors:
     email: cassio@cassiobp.com.br
     web: https://www.cassiodeveloper.com.br
     twitter: https://twitter.com/cassiodeveloper
-    description: ""
+    description: "Explore an Inspiring Journey of Talks by Cássio Pereira - From Thoughtful Keynotes to Engaging Conversations. Dive into a treasure trove of insightful speeches and presentations that have captivated audiences worldwide. Witness the evolution of Cássio's ideas and expertise over the years. Discover the transformative power of their words on this curated platform."
 
 # Plugins
 plugins:
