@@ -7,7 +7,7 @@ image: assets/images/bsides.jpg
 categories: [ bsides, conferece, international, appsec ]
 tags: [appsec, bsides, conference]
 featured: true
-hidden: true
+hidden: false
 rating: 5
 ---
 This talk was my first international talk, at the first ever BSides Kraków so it was super special.
