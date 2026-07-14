@@ -9,7 +9,7 @@ url: "https://www.cassiodeveloper.com.br"
 baseurl: /talks
 lang: en
 google_analytics: 'G-EY9RYD056V'
-include: ["_pages"]
+include: [ "_pages" ]
 permalink: /:title/
 
 # SEO (jekyll-seo-tag)
@@ -20,51 +20,51 @@ twitter:
 social:
   name: Cássio Pereira
   links:
-    - https://twitter.com/cassiodeveloper
-    - https://www.linkedin.com/in/cassiodeveloper
-    - https://github.com/cassiodeveloper
-    - https://www.cassiodeveloper.com.br
+  - https://x.com/cassiodeveloper
+  - https://www.linkedin.com/in/cassiodeveloper
+  - https://github.com/cassiodeveloper
+  - https://www.cassiodeveloper.com.br
 
 # Default Open Graph image + post metadata
 defaults:
-  - scope:
-      path: ""
-    values:
-      image: /assets/images/jumbotron.jpg
-  - scope:
-      path: ""
-      type: posts
-    values:
-      author: Cassio
-      layout: post
+- scope:
+    path: ""
+  values:
+    image: /assets/images/jumbotron.jpg
+- scope:
+    path: ""
+    type: posts
+  values:
+    author: Cassio
+    layout: post
 
 # Authors
 authors:
   Cassio:
-    name: Cássio Pereira
-    display_name: Cássio Pereira
+    name: Cássio B. Pereira
+    display_name: Cássio B. Pereira
     avatar: /assets/images/profile23.jpg
     email: cassio@cassiobp.com.br
     web: https://www.cassiodeveloper.com.br
-    twitter: https://twitter.com/cassiodeveloper
-    description: "👨‍💻Cyber Security Engineer - Teach and help you to build secure software. #AppSec #DevSecOps 👨‍🎓Developer🕵️‍♂️Forensics👨‍🏫Teacher🎤Speaker"
+    twitter: https://x.com/cassiodeveloper
+    description: "👨‍💻 AppSec Expert - I facilitate the #SDLC by design. Speed ​​with #security integrated by culture, strategy and technology."
 
 # Plugins
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-archives
-    
+- jekyll-paginate
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-archives
+
 # Archives
 jekyll-archives:
   enabled:
-    - categories
+  - categories
   layout: archive
   permalinks:
     category: '/category/:name/'
-    
+
 # Pagination — disabled: the Talks index shows every talk so the
 # client-side filters (event / topic / year / language) span all of them.
 
@@ -86,4 +86,4 @@ kramdown:
 # Lazy Images ("enabled" or "disabled")
 lazyimages: "disabled"
 
-exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+exclude: [ changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock ]
