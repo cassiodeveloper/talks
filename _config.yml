@@ -3,13 +3,12 @@ name: "Cássio Pereira | Talks"
 title: "Talks & Workshops by Cássio Pereira"
 tagline: "AppSec & DevSecOps talks, keynotes and workshops"
 description: "Talks, keynotes and workshops on Application Security and DevSecOps by Cássio Pereira — from OWASP and BSides conferences to hands-on developer workshops across Europe and Brazil. Browse and filter every talk by event, topic, year and language."
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
+logo: 'assets/images/logo.svg'
+favicon: 'assets/images/favicon.svg'
 url: "https://www.cassiodeveloper.com.br"
 baseurl: /talks
 lang: en
 google_analytics: 'G-EY9RYD056V'
-mailchimp-list: 'https://about.us4.list-manage.com/subscribe/post?u=968adfbf049f7a350d19507dd&amp;id=17db7a9dc3&amp;f_id=00ae09e9f0'
 include: ["_pages"]
 permalink: /:title/
 

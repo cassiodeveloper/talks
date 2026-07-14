@@ -91,18 +91,9 @@ a:hover, a:focus { color: var(--accent-dk); }
 .listfeaturedtag { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: var(--surface); }
 .listfeaturedtag .card, .listfeaturedtag .card-footer { border: 0 !important; }
 
-/* ---------- Buttons / follow / subscribe ---------- */
+/* ---------- Buttons / follow ---------- */
 .btn.follow { border-color: var(--accent); color: var(--accent); border-radius: 999em; }
 .btn.follow:hover { background: var(--accent); color: #fff; }
-.btn.subscribe,
-input#mc-embedded-subscribe.heart,
-.wj-contact-form input[type="submit"] {
-    background: var(--accent) !important;
-    border-color: var(--accent) !important;
-    color: #fff !important;
-    border-radius: 999em;
-}
-.btn.subscribe:hover { background: var(--accent-dk) !important; }
 
 /* ---------- Explore / tags jumbotron ---------- */
 .jumbotron.fortags { background: var(--ink); }
@@ -127,7 +118,6 @@ blockquote { border-left: 4px solid var(--accent); color: var(--muted); }
 
 /* ---------- Footer ---------- */
 .footer { background: var(--bg); border-top: 1px solid var(--line) !important; color: var(--muted); }
-.alertbar { color: var(--ink); }
 
 /* ============================================================
    FILTER TOOLBAR
