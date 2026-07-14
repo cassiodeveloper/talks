@@ -285,32 +285,46 @@ ul.tags li a:hover { background: var(--accent); color: #fff; border-color: var(-
 .share a:hover { color: var(--accent); fill: var(--accent); }
 
 /* ============================================================
-   CARD THUMBNAIL FALLBACK (talks without a distinct image)
+   CARD-NATIVE BRANDED THUMBNAIL
+   Rendered in HTML/CSS so type stays crisp and readable at card
+   size — unlike the wide 1200x630 cover shrunk into a strip.
    ============================================================ */
-.thumb-fallback {
+.maxthumb .talk-thumb { height: 200px; }
+.talk-thumb {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    min-height: 170px;
-    padding: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 22px 24px;
     background:
-        radial-gradient(120% 120% at 100% 0%, rgba(201,63,29,0.16), transparent 55%),
+        radial-gradient(130% 130% at 100% 0%, rgba(201,63,29,0.24), transparent 55%),
         var(--ink);
 }
-.thumb-fallback .tf-event {
-    font-family: var(--serif);
-    color: #fff;
-    font-size: 1.25rem;
-    line-height: 1.25;
-}
-.thumb-fallback .tf-kicker {
-    display: block;
+.talk-thumb .tt-kicker {
     font-family: var(--sans);
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     font-weight: 700;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--accent);
-    margin-bottom: 8px;
 }
+.talk-thumb .tt-event {
+    font-family: var(--serif);
+    color: #fff;
+    font-size: 1.7rem;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+}
+.talk-thumb .tt-event::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 12px;
+}
+
+/* Featured box: show the whole cover (no crop) over matching ink */
+.wrapthumbnail { background: var(--ink); }
+.featured-box-img-cover { object-fit: contain; }

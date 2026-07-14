@@ -6,6 +6,7 @@ author: Cassio
 image: assets/images/covers/bsides-krakow.svg
 event: "BSides Kraków"
 location: "Kraków, Poland"
+kind: Talk
 lang: EN
 categories: [ bsides, conference, international, appsec ]
 tags: [appsec, bsides, conference, devsecops]

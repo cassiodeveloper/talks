@@ -13,20 +13,16 @@
     <div class="card h-100">
         <div class="maxthumb">
             <a href="{{ site.baseurl }}{{ post.url }}">
-                {% if post.image %}
-
-                    {% if site.lazyimages == "enabled" %}
-                        <img class="img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}" alt="{{ post.title }}">
-                    {% else %}
-                        <img class="img-fluid" src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}" alt="{{ post.title }}">
-                    {% endif %}
-
+                {% comment %} Card-native branded thumbnail: reads well at small sizes.
+                   The rich 1200x630 cover (post.image) is kept for the detail page
+                   featured image and social/og previews. A raster photo set via
+                   `thumb:` still wins if provided. {% endcomment %}
+                {% if post.thumb %}
+                    <img class="img-fluid" src="{% if post.thumb contains "://" %}{{ post.thumb }}{% else %}{{ site.baseurl }}/{{ post.thumb }}{% endif %}" alt="{{ post.title }}">
                 {% else %}
-                    <div class="thumb-fallback">
-                        <div class="tf-event">
-                            <span class="tf-kicker">{{ post.categories | first | default: 'Talk' }}</span>
-                            {{ post_event | default: post.title }}
-                        </div>
+                    <div class="talk-thumb">
+                        <span class="tt-kicker">{{ post.kind | default: 'Talk' }} · {{ post_year }}</span>
+                        <span class="tt-event">{{ post_event | default: post.title }}</span>
                     </div>
                 {% endif %}
             </a>

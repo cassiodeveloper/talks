@@ -6,6 +6,7 @@ author: Cassio
 image: assets/images/covers/code-frenzy-iron-man.svg
 event: "Code Frenzy"
 location: "Online"
+kind: Talk
 lang: EN
 categories: [ conference, international, appsec ]
 tags: [appsec, conference, threat-modeling, devsecops]

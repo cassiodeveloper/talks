@@ -6,6 +6,7 @@ author: Cassio
 image: assets/images/covers/bsides-porto.svg
 event: "BSides Porto"
 location: "Porto, Portugal"
+kind: Workshop
 lang: PT
 categories: [ bsides, workshop, international, appsec ]
 tags: [appsec, bsides, workshop, devsecops]

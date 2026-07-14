@@ -6,6 +6,7 @@ author: Cassio
 image: assets/images/covers/owasp-shift-left.svg
 event: "OWASP Poland Chapter"
 location: "Poland"
+kind: Meetup
 lang: EN
 categories: [ owasp, meetup, appsec ]
 tags: [appsec, owasp, meetup, threat-modeling]
