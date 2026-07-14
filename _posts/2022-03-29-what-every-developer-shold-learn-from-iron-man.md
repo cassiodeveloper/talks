@@ -3,9 +3,12 @@ layout: post
 title:  "What every developer shold learn from Iron Man"
 description: "This talk was presented at Code Freenzy with focus on Developers"
 author: Cassio
-image: assets/images/codef.png
-categories: [ conferece, international, appsec ]
-tags: [appsec, conference]
+image: assets/images/covers/code-frenzy-iron-man.svg
+event: "Code Frenzy"
+location: "Online"
+lang: EN
+categories: [ conference, international, appsec ]
+tags: [appsec, conference, threat-modeling, devsecops]
 featured: false
 hidden: false
 rating: 5

@@ -1,14 +1,43 @@
 # Site
 name: "Cássio Pereira | Talks"
-title: "Cássio Pereira | Talks"
-description: "Explore an Inspiring Journey of Talks by Cássio Pereira - From Thoughtful Keynotes to Engaging Conversations. Dive into a treasure trove of insightful speeches and presentations that have captivated audiences worldwide. Witness the evolution of Cássio's ideas and expertise over the years. Discover the transformative power of their words on this curated platform."
+title: "Talks & Workshops by Cássio Pereira"
+tagline: "AppSec & DevSecOps talks, keynotes and workshops"
+description: "Talks, keynotes and workshops on Application Security and DevSecOps by Cássio Pereira — from OWASP and BSides conferences to hands-on developer workshops across Europe and Brazil. Browse and filter every talk by event, topic, year and language."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
+url: "https://www.cassiodeveloper.com.br"
 baseurl: /talks
+lang: en
 google_analytics: 'G-EY9RYD056V'
 mailchimp-list: 'https://about.us4.list-manage.com/subscribe/post?u=968adfbf049f7a350d19507dd&amp;id=17db7a9dc3&amp;f_id=00ae09e9f0'
 include: ["_pages"]
 permalink: /:title/
+
+# SEO (jekyll-seo-tag)
+author: Cassio
+twitter:
+  username: cassiodeveloper
+  card: summary_large_image
+social:
+  name: Cássio Pereira
+  links:
+    - https://twitter.com/cassiodeveloper
+    - https://www.linkedin.com/in/cassiodeveloper
+    - https://github.com/cassiodeveloper
+    - https://www.cassiodeveloper.com.br
+
+# Default Open Graph image + post metadata
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/jumbotron.jpg
+  - scope:
+      path: ""
+      type: posts
+    values:
+      author: Cassio
+      layout: post
 
 # Authors
 authors:
@@ -37,10 +66,9 @@ jekyll-archives:
   permalinks:
     category: '/category/:name/'
     
-# Pagination 
-paginate: 6
-paginate_path: /page:num/
-    
+# Pagination — disabled: the Talks index shows every talk so the
+# client-side filters (event / topic / year / language) span all of them.
+
 # Other
 markdown: kramdown
 

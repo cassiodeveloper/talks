@@ -1,0 +1,28 @@
+<!-- Structured data: each talk as a schema.org Event (rich results for speaking engagements) -->
+{% assign talk_lang = page.lang | default: 'en' | downcase %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": {{ page.title | jsonify }},
+  "description": {{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 300 | jsonify }},
+  "startDate": "{{ page.date | date_to_xmlschema }}",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+  {% if page.location %}"location": { "@type": "Place", "name": {{ page.location | jsonify }} },{% endif %}
+  {% if page.event %}"superEvent": { "@type": "Event", "name": {{ page.event | jsonify }} },{% endif %}
+  "image": {{ page.image | default: site.image | absolute_url | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "inLanguage": "{{ talk_lang }}",
+  "performer": {
+    "@type": "Person",
+    "name": "Cássio Pereira",
+    "url": "https://www.cassiodeveloper.com.br"
+  },
+  "organizer": {
+    "@type": "Person",
+    "name": "Cássio Pereira",
+    "url": "https://www.cassiodeveloper.com.br"
+  }
+}
+</script>

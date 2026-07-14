@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="What every developer should learn from Iron Man — Code Frenzy 2022">
+  <defs>
+    <radialGradient id="glow" cx="100%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#C93F1D" stop-opacity="0.55"/>
+      <stop offset="45%" stop-color="#C93F1D" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#C93F1D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#181818"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="90" y="210" width="64" height="6" rx="3" fill="#C93F1D"/>
+
+  <text x="90" y="175" font-family="'Public Sans', Helvetica, Arial, sans-serif"
+        font-size="26" font-weight="700" letter-spacing="7" fill="#C93F1D">TALK · 2022</text>
+
+  <text x="88" y="300" font-family="Castoro, Georgia, 'Times New Roman', serif"
+        font-size="62" fill="#FBFCFB">What every developer</text>
+  <text x="88" y="372" font-family="Castoro, Georgia, 'Times New Roman', serif"
+        font-size="62" fill="#FBFCFB">should learn from</text>
+  <text x="88" y="444" font-family="Castoro, Georgia, 'Times New Roman', serif"
+        font-size="62" fill="#C93F1D">Iron Man</text>
+
+  <text x="90" y="522" font-family="'Public Sans', Helvetica, Arial, sans-serif"
+        font-size="30" font-weight="600" fill="#FBFCFB">Code Frenzy</text>
+  <text x="90" y="560" font-family="'Public Sans', Helvetica, Arial, sans-serif"
+        font-size="24" fill="#8E8F8E">Online conference</text>
+
+  <text x="1110" y="560" text-anchor="end" font-family="'Public Sans', Helvetica, Arial, sans-serif"
+        font-size="24" fill="#8E8F8E">Cássio Pereira</text>
+</svg>

@@ -1,0 +1,316 @@
+/* ============================================================
+   Talks — Theme overlay to match cassiodeveloper.com.br
+   Fonts: Castoro (headings) + Public Sans (body)
+   Palette: warm off-white / near-black / terracotta accent
+   Loaded AFTER screen.css & main.css so these rules win.
+   Fonts are loaded via <link> in _layouts/default.html.
+   ============================================================ */
+
+:root {
+    --bg:        #FBFCFB;
+    --surface:   #FFFFFF;
+    --ink:       #181818;
+    --ink-soft:  #2A2A2A;
+    --muted:     #767776;
+    --line:      #ECEEEC;
+    --accent:    #C93F1D;
+    --accent-dk: #A6301A;
+    --accent-10: rgba(201, 63, 29, 0.10);
+    --accent-06: rgba(201, 63, 29, 0.06);
+    --serif: 'Castoro', Georgia, 'Times New Roman', serif;
+    --sans:  'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ---------- Base typography ---------- */
+body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6,
+.card-title, .card-title a,
+.mainheading h1.sitetitle,
+.mainheading h1.posttitle,
+.posttitle, .section-title h2 {
+    font-family: var(--serif);
+    letter-spacing: -0.01em;
+}
+
+h1, h2, h3, .section-title h2, .sitetitle, .posttitle {
+    font-weight: 400;           /* Castoro reads elegant at normal weight */
+    color: var(--ink);
+}
+
+a { color: var(--accent); }
+a:hover, a:focus { color: var(--accent-dk); }
+
+/* ---------- Navigation ---------- */
+.mediumnavigation,
+.navbar-light.bg-white { background: rgba(251, 252, 251, 0.92) !important; border-bottom: 1px solid var(--line); backdrop-filter: saturate(140%) blur(8px); }
+.mediumnavigation .nav-link { color: var(--ink) !important; font-weight: 500; letter-spacing: 0.01em; }
+.mediumnavigation .nav-link:hover,
+.mediumnavigation .nav-item.active .nav-link { color: var(--accent) !important; }
+
+/* ---------- Site header ---------- */
+.mainheading h1.sitetitle { font-family: var(--serif); font-weight: 400; letter-spacing: -0.02em; }
+.mainheading .lead { color: var(--muted); font-weight: 300; }
+
+/* ---------- Section titles ---------- */
+.section-title h2 { border: 0; }
+.section-title h2 span {
+    background: transparent;
+    color: var(--ink);
+    padding: 0 0 0.35rem 0;
+    border-bottom: 2px solid var(--accent);
+}
+
+/* ---------- Cards ---------- */
+.card {
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+    background: var(--surface);
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.listrecent .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 34px -18px rgba(24, 24, 24, 0.35);
+    border-color: #dcdedc;
+}
+.card-title a.text-dark { color: var(--ink) !important; }
+.card-title a.text-dark:hover { color: var(--accent) !important; }
+.card-text { color: var(--muted); font-weight: 300; line-height: 1.7; }
+.card-footer { border-top: 1px solid var(--line) !important; }
+.post-name a { color: var(--ink-soft); }
+.post-date { color: var(--muted); }
+
+/* Featured block */
+.listfeaturedtag { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: var(--surface); }
+.listfeaturedtag .card, .listfeaturedtag .card-footer { border: 0 !important; }
+
+/* ---------- Buttons / follow / subscribe ---------- */
+.btn.follow { border-color: var(--accent); color: var(--accent); border-radius: 999em; }
+.btn.follow:hover { background: var(--accent); color: #fff; }
+.btn.subscribe,
+input#mc-embedded-subscribe.heart,
+.wj-contact-form input[type="submit"] {
+    background: var(--accent) !important;
+    border-color: var(--accent) !important;
+    color: #fff !important;
+    border-radius: 999em;
+}
+.btn.subscribe:hover { background: var(--accent-dk) !important; }
+
+/* ---------- Explore / tags jumbotron ---------- */
+.jumbotron.fortags { background: var(--ink); }
+.jumbotron.fortags a {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.28);
+    color: #fff;
+    text-transform: none;
+    transition: background .15s ease, border-color .15s ease;
+}
+.jumbotron.fortags a:hover { background: var(--accent); border-color: var(--accent); }
+.jumbotron.fortags .transpdark h2 { font-family: var(--serif); }
+
+/* ---------- Post body ---------- */
+.article-post { font-family: var(--sans); color: var(--ink-soft); }
+blockquote { border-left: 4px solid var(--accent); color: var(--muted); }
+.post-top-meta .author-description { color: var(--muted); }
+
+/* ---------- Star rating → accent ---------- */
+.star-rating .fa-star,
+.star-rating .fas.fa-star { color: var(--accent) !important; }
+
+/* ---------- Footer ---------- */
+.footer { background: var(--bg); border-top: 1px solid var(--line) !important; color: var(--muted); }
+.alertbar { color: var(--ink); }
+
+/* ============================================================
+   FILTER TOOLBAR
+   ============================================================ */
+.talks-toolbar {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 18px 18px 14px;
+    margin-bottom: 34px;
+    box-shadow: 0 8px 24px -20px rgba(24,24,24,0.4);
+}
+.talks-toolbar .tb-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; }
+.talks-toolbar .tb-field { display: flex; flex-direction: column; gap: 5px; flex: 1 1 150px; min-width: 130px; }
+.talks-toolbar .tb-field.tb-search { flex: 2 1 240px; }
+.talks-toolbar label {
+    font-family: var(--sans);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin: 0;
+}
+.talks-toolbar select,
+.talks-toolbar input[type="search"] {
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    color: var(--ink);
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 9px 12px;
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    transition: border-color .15s ease, box-shadow .15s ease;
+}
+.talks-toolbar select {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path d='M2 4l4 4 4-4' fill='none' stroke='%23767776' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 34px;
+}
+.talks-toolbar select:focus,
+.talks-toolbar input[type="search"]:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-10);
+}
+.talks-toolbar .tb-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.talks-toolbar .tb-count { font-size: 0.9rem; color: var(--muted); }
+.talks-toolbar .tb-count b { color: var(--ink); font-weight: 600; }
+.talks-toolbar .tb-clear {
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: 999em;
+    color: var(--muted);
+    font-size: 0.82rem;
+    font-weight: 500;
+    padding: 6px 16px;
+    cursor: pointer;
+    transition: all .15s ease;
+}
+.talks-toolbar .tb-clear:hover { border-color: var(--accent); color: var(--accent); }
+.talks-toolbar .tb-clear[hidden] { display: none; }
+
+/* Empty state */
+.talks-empty {
+    display: none;
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--muted);
+    font-family: var(--serif);
+    font-size: 1.4rem;
+}
+.talks-empty.show { display: block; }
+
+/* Card meta chips (lang / event) */
+.talk-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.talk-chip {
+    font-family: var(--sans);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    border-radius: 999em;
+    background: var(--accent-06);
+    color: var(--accent-dk);
+    border: 1px solid var(--accent-10);
+}
+.talk-chip.chip-lang { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+.postbox-hidden { display: none !important; }
+
+@media (max-width: 575px) {
+    .talks-toolbar .tb-field { flex: 1 1 100%; }
+}
+
+/* ============================================================
+   TALK DETAIL PAGE
+   ============================================================ */
+.talk-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 18px;
+    margin: 4px 0 8px;
+    font-family: var(--sans);
+    font-size: 0.92rem;
+    color: var(--muted);
+}
+.talk-meta-item { display: inline-flex; align-items: center; gap: 6px; }
+.talk-meta-item i { color: var(--accent); font-size: 0.9em; }
+.talk-meta-lang {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #fff;
+    background: var(--ink);
+    padding: 3px 10px;
+    border-radius: 999em;
+}
+
+/* Tag / category chips on the detail page */
+ul.tags li a {
+    background: var(--accent-06);
+    color: var(--accent-dk);
+    border: 1px solid var(--accent-10);
+    border-radius: 999em;
+    padding: 5px 13px;
+    font-weight: 500;
+    transition: all .15s ease;
+}
+ul.tags li a:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+.after-post-cats ul.tags li a { text-transform: capitalize; }
+
+.rating strong { font-family: var(--sans); color: var(--ink); }
+
+/* Prev / next navigation */
+.PageNavigation a { color: var(--ink); font-family: var(--serif); font-weight: 400; }
+.PageNavigation a:hover { color: var(--accent); }
+
+.listrelated .card:hover { transform: translateY(-4px); }
+.share a:hover { color: var(--accent); fill: var(--accent); }
+
+/* ============================================================
+   CARD THUMBNAIL FALLBACK (talks without a distinct image)
+   ============================================================ */
+.thumb-fallback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 170px;
+    padding: 20px;
+    background:
+        radial-gradient(120% 120% at 100% 0%, rgba(201,63,29,0.16), transparent 55%),
+        var(--ink);
+}
+.thumb-fallback .tf-event {
+    font-family: var(--serif);
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 1.25;
+}
+.thumb-fallback .tf-kicker {
+    display: block;
+    font-family: var(--sans);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+}

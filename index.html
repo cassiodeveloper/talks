@@ -1,7 +1,9 @@
 ---
 layout: default
-title: Home
+title: Talks
 ---
+
+{% include home-schema.html %}
 
 {% if page.url == "/" %}
 
@@ -38,9 +40,40 @@ title: Home
 
     </div>
 
+    <!-- Filter toolbar
+    ================================================== -->
+    <div class="talks-toolbar" id="talks-toolbar">
+        <div class="tb-row">
+            <div class="tb-field tb-search">
+                <label for="tb-search">Search</label>
+                <input type="search" id="tb-search" placeholder="Search talks, topics, events…" autocomplete="off">
+            </div>
+            <div class="tb-field">
+                <label for="tb-event">Event</label>
+                <select id="tb-event"><option value="">All events</option></select>
+            </div>
+            <div class="tb-field">
+                <label for="tb-topic">Topic</label>
+                <select id="tb-topic"><option value="">All topics</option></select>
+            </div>
+            <div class="tb-field">
+                <label for="tb-year">Year</label>
+                <select id="tb-year"><option value="">All years</option></select>
+            </div>
+            <div class="tb-field">
+                <label for="tb-lang">Language</label>
+                <select id="tb-lang"><option value="">All</option></select>
+            </div>
+        </div>
+        <div class="tb-meta">
+            <span class="tb-count" id="tb-count"></span>
+            <button type="button" class="tb-clear" id="tb-clear" hidden>Clear filters</button>
+        </div>
+    </div>
+
     <div class="row listrecent">
 
-        {% for post in paginator.posts %}
+        {% for post in site.posts %}
 
         {% include postbox.html %}
 
@@ -48,14 +81,6 @@ title: Home
 
     </div>
 
+    <div class="talks-empty" id="talks-empty">No talks match these filters.</div>
+
 </section>
-
-<!-- Pagination
-================================================== -->
-<div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
-</div>
-

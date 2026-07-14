@@ -3,9 +3,12 @@ layout: post
 title:  "How Iron man help us to implement secure software development lifecycle"
 description: "This workshop took place at BSides Porto - Portugal."
 author: Cassio
-image: assets/images/bsides.jpg
-categories: [ bsides, conferece, international, appsec ]
-tags: [appsec, bsides, conference]
+image: assets/images/covers/bsides-porto.svg
+event: "BSides Porto"
+location: "Porto, Portugal"
+lang: PT
+categories: [ bsides, workshop, international, appsec ]
+tags: [appsec, bsides, workshop, devsecops]
 featured: true
 hidden: false
 rating: 5

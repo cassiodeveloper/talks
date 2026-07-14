@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Workshop at BSides Porto 2025">
+  <defs>
+    <radialGradient id="glow" cx="100%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#C93F1D" stop-opacity="0.55"/>
+      <stop offset="45%" stop-color="#C93F1D" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#C93F1D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#181818"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- accent rule -->
+  <rect x="90" y="250" width="64" height="6" rx="3" fill="#C93F1D"/>
+
+  <!-- kicker -->
+  <text x="90" y="215" font-family="'Public Sans', Helvetica, Arial, sans-serif"
+        font-size="26" font-weight="700" letter-spacing="7" fill="#C93F1D">WORKSHOP · 2025</text>
+
+  <!-- title -->
+  <text x="88" y="330" font-family="Castoro, Georgia, 'Times New Roman', serif"
+        font-size="72" fill="#FBFCFB">How Iron Man helps us</text>
+  <text x="88" y="410" font-family="Castoro, Georgia, 'Times New Roman', serif"
+        font-size="72" fill="#FBFCFB">build a Secure SDLC</text>
+
+  <!-- footer meta -->
+  <text x="90" y="520" font-family="'Public Sans', Helvetica, Arial, sans-serif"
+        font-size="30" font-weight="600" fill="#FBFCFB">BSides Porto</text>
+  <text x="90" y="558" font-family="'Public Sans', Helvetica, Arial, sans-serif"
+        font-size="24" fill="#8E8F8E">Porto, Portugal · Hands-on workshop</text>
+
+  <!-- speaker -->
+  <text x="1110" y="558" text-anchor="end" font-family="'Public Sans', Helvetica, Arial, sans-serif"
+        font-size="24" fill="#8E8F8E">Cássio Pereira</text>
+</svg>

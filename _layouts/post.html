@@ -5,6 +5,8 @@ archive: false
 post_class: post-template
 ---
 
+{% include talk-schema.html %}
+
 <!-- Begin Article
 ================================================== -->
 <div class="container">
@@ -40,6 +42,16 @@ post_class: post-template
 
                 <!-- Post Title -->
                 <h1 class="posttitle">{{ page.title }}</h1>
+
+                <!-- Talk meta bar -->
+                {% if page.event or page.location or page.lang %}
+                <div class="talk-meta">
+                    {% if page.lang %}<span class="talk-meta-item talk-meta-lang">{{ page.lang | upcase }}</span>{% endif %}
+                    {% if page.event %}<span class="talk-meta-item"><i class="fas fa-microphone-alt"></i> {{ page.event }}</span>{% endif %}
+                    {% if page.location %}<span class="talk-meta-item"><i class="fas fa-map-marker-alt"></i> {{ page.location }}</span>{% endif %}
+                    <span class="talk-meta-item"><i class="far fa-calendar"></i> {{ page.date | date: "%B %Y" }}</span>
+                </div>
+                {% endif %}
 
             </div>
 

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="The real shift-left — OWASP Poland Chapter 2022">
+  <defs>
+    <radialGradient id="glow" cx="100%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#C93F1D" stop-opacity="0.55"/>
+      <stop offset="45%" stop-color="#C93F1D" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#C93F1D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#181818"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="90" y="250" width="64" height="6" rx="3" fill="#C93F1D"/>
+
+  <text x="90" y="215" font-family="'Public Sans', Helvetica, Arial, sans-serif"
+        font-size="26" font-weight="700" letter-spacing="7" fill="#C93F1D">MEETUP · 2022</text>
+
+  <text x="88" y="350" font-family="Castoro, Georgia, 'Times New Roman', serif"
+        font-size="90" fill="#FBFCFB">The real shift-left</text>
+  <text x="90" y="412" font-family="Castoro, Georgia, 'Times New Roman', serif"
+        font-style="italic" font-size="30" fill="#8E8F8E">Threat modeling &amp; security requirements.</text>
+
+  <text x="90" y="520" font-family="'Public Sans', Helvetica, Arial, sans-serif"
+        font-size="30" font-weight="600" fill="#FBFCFB">OWASP Poland Chapter</text>
+  <text x="90" y="558" font-family="'Public Sans', Helvetica, Arial, sans-serif"
+        font-size="24" fill="#8E8F8E">Poland</text>
+
+  <text x="1110" y="558" text-anchor="end" font-family="'Public Sans', Helvetica, Arial, sans-serif"
+        font-size="24" fill="#8E8F8E">Cássio Pereira</text>
+</svg>

@@ -3,9 +3,12 @@ layout: post
 title:  "How Iron man help us to implement secure software development lifecycle"
 description: "This talk was my first international talk, and the first ever BSides Kraków so it was super special"
 author: Cassio
-image: assets/images/bsides.jpg
-categories: [ bsides, conferece, international, appsec ]
-tags: [appsec, bsides, conference]
+image: assets/images/covers/bsides-krakow.svg
+event: "BSides Kraków"
+location: "Kraków, Poland"
+lang: EN
+categories: [ bsides, conference, international, appsec ]
+tags: [appsec, bsides, conference, devsecops]
 featured: true
 hidden: false
 rating: 5
